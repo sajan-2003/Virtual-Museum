@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Virtual Museum of the Mind - Home</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Hamburger Icon for mobile view -->
+        <div class="hamburger-icon" id="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <a href="#science" class="dropbtn">Science</a>
+            <div class="dropdown-content">
+                <a href="#biology">Biology</a>
+                <a href="#chemistry">Chemistry</a>
+                <a href="#physics">Physics</a>
+            </div>
+        </div>
+
+        <a href="#math">Math</a>
+        <a href="#art">Art</a>
+        <a href="#tech">Tech</a>
+    </nav>
+    <!-- Header Section -->
+
+    <header>
+        <h1>Welcome to the Virtual Museum of the Mind</h1>
+        <p>Explore human thought and discovery through Science, Math, Art, and Technology.</p>
+        <!-- Sign Up / Login Button -->
+        <button class="sign-up-btn" id="open-login-modal">Login</button>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <h2>Your Journey Through Human Discovery</h2>
+        <p class="intro-text">The Virtual Museum of the Mind allows you to explore ideas that have shaped humanity’s
+            knowledge. Click on the categories below to begin your exploration.</p>
+
+        <!-- Categories Section -->
+        <div class="category-list">
+            <!-- Science Category -->
+            <div class="category" id="science">
+                <h3>Science</h3>
+                <p>Explore groundbreaking scientific theories and discoveries.</p>
+                <a href="#">
+                    <button id="openPopupBtn">Explore Science</button></a>
+              
+                </div>
+
+                <!-- Math Category -->
+                <div class="category" id="maths">
+                    <h3>Maths</h3>
+                    <p>Understand the beauty of mathematical concepts and puzzles.</p>
+                    <a href="math.html"><button>Explore Math</button></a>
+                </div>
+
+                <!-- Art Category -->
+                <div class="category" id="History">
+                    <h3>History</h3>
+                    <p>Dive into the creative world of art and visual expressions.</p>
+                    <br>
+                    <a href="History.html"><button>Explore History</button></a>
+                </div>
+
+                <!-- Tech Category -->
+                <div class="category" id="tech">
+                    <h3>Technology</h3>
+                    <p>Learn about the innovations that have revolutionized the world.</p><br>
+                    <a href="tech.html"><button>Explore Tech</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2025 Virtual Museum of the Mind | All rights reserved</p>
+        </footer>
+
+        <!-- Modal (Login Form) -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Login</h2>
+                <form id="login">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p class="toggle-link">Don't have an account? <a href="#">Sign Up here</a></p>
+                <div id="login-error" class="error"></div>
+            </div>
+        </div>
+  <!-- The Modal -->
+  <div id="myPopup" class="Popup">
+    <div class="Popup-content">
+        <span class="close">&times;</span>
+        <h2>This is a popup</h2>
+        <p>You can put any content here — text, images, forms, etc.</p>
+    </div>
+        <!-- JavaScript -->
+        <script src="Home.js"></script>
+
+</body>
+
+</html>

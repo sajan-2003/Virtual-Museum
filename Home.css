@@ -1,0 +1,415 @@
+/* General Body and Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #ffffff;
+    padding-top: 50px;
+    background-image: url(national-history-museum-4314035.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially off-screen */
+    width: 250px;
+    height:auto;
+    background-color: #0b000072;
+    z-index: 1000;
+    transition: left 0.3s ease-in-out;
+    display:flex;
+    flex-direction:column;
+    padding-top: 60px;
+    align-items: flex-start;
+    border-radius: 10px;
+ 
+}
+
+nav.active {
+    left: 0; /* Moves nav to the left when active */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    margin-left: 50px;
+    width:80%;
+    text-align: left;
+    border-top: 1px solid #444;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffffff6e;
+    transform: scale(1.2);
+    transition: 1.2s;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+    z-index: 1100;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+/* Basic dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position:absolute;
+    background-color: #1c1a1a8a;
+    min-width: 150px;
+    margin-left: 150px;
+    
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Header Section */
+/* Resetting default margin for body and header */
+body, header {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+
+header {
+    background: linear-gradient(to right, #2f4f4f, #20b2aa);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 5px solid #ffffff9e;
+    box-shadow: #000000;
+    position: relative;
+    top: 0;
+   
+    
+}
+header h1 {
+    font-size: 50px;
+    margin-bottom: 20px; 
+    
+}
+
+header p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.sign-up-btn {
+    background-color: #3b61a2;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 20px 40px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 50px;
+
+    /* Positioning the button in the top-right corner */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+
+.sign-up-btn:hover {
+    background-color: #0066ff;
+}
+
+/* Main Content Section */
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    
+}
+
+.intro-text {
+    font-size: 18px;
+    margin-bottom: 40px;
+    
+  
+}
+.intro-text,.content h2{
+    background-color: #fffefe00;
+    padding:10px;
+
+}
+/* Category Section */
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.category {
+    background-color: #302b2b88;
+    padding:50px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    width: 330px;
+}
+
+.category h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.category p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.category button {
+    background-color: #20b2aa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.category button:hover {
+    background-color: #008080;
+}
+
+.category:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Modal Styling */
+.modal {
+    color: #2f4f4f;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(150, 150, 150, 0.7);
+    overflow: auto;
+    padding-top: 100px;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.modal input[type="email"],
+.modal input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal button {
+    background-color: #20b2aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    background-color: #008080;
+}
+
+.modal .close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.toggle-link a {
+    color: #20b2aa;
+    text-decoration: none;
+}
+
+.toggle-link a:hover {
+    color: #008080;
+}
+
+.Popup{display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/* Modal box */
+.Popup-content{
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+/* Close button */
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+  
+    
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .content h2 {
+        font-size: 28px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+    }
+}

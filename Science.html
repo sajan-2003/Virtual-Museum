@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Virtual Museum of the Mind</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .exhibit {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .exhibit:hover {
+            transform: translateY(-10px);
+        }
+        .exhibit img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .exhibit h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        .exhibit p {
+            font-size: 16px;
+            color: #555;
+        }
+        .exhibit .read-more {
+            color: #007BFF;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Virtual Museum of the Mind</h1>
+    <p>Explore fascinating concepts that have shaped human thought and discovery.</p>
+</header>
+
+<div class="container">
+    <div class="exhibit">
+        <img src="https://via.placeholder.com/300x200" alt="Exhibit Image 1">
+        <h2>The Theory of Relativity</h2>
+        <p>Einstein's groundbreaking theory revolutionized our understanding of time, space, and gravity.</p>
+        <p class="read-more" onclick="alert('Learn more about the Theory of Relativity.')">Learn More</p>
+    </div>
+
+    <div class="exhibit">
+        <img src="https://via.placeholder.com/300x200" alt="Exhibit Image 2">
+        <h2>Evolution of the Internet</h2>
+        <p>From ARPANET to the modern World Wide Web, explore how the internet reshaped human communication.</p>
+        <p class="read-more" onclick="alert('Learn more about the Evolution of the Internet.')">Learn More</p>
+    </div>
+
+    <div class="exhibit">
+        <img src="https://via.placeholder.com/300x200" alt="Exhibit Image 3">
+        <h2>Quantum Mechanics</h2>
+        <p>Delve into the strange and mysterious world of subatomic particles and wave-particle duality.</p>
+        <p class="read-more" onclick="alert('Learn more about Quantum Mechanics.')">Learn More</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Virtual Museum of the Mind | All rights reserved</p>
+</footer>
+
+</body>
+</html>
