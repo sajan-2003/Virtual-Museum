@@ -1,0 +1,36 @@
+{
+    "id": "moon-landing-1969",
+    "title": "The Moon Landing",
+    "year": 1969,
+    "category": "Space Exploration",
+    "summary": "On July 20, 1969, Apollo 11 astronauts Neil Armstrong and Buzz Aldrin became the first humans to land on the Moon.",
+    "details": "The Apollo 11 mission was a significant milestone in space exploration. Neil Armstrong's first steps were broadcast to millions, marking the achievement with the words: 'That's one small step for man, one giant leap for mankind.' The mission showcased technological advances and inspired generations.",
+    "images": [
+      "moon-landing.jpg"
+    ],
+    "notable_figures": [
+      "Neil Armstrong",
+      "Buzz Aldrin",
+      "Michael Collins"
+    ],
+    "timeline": [
+      {
+        "date": "1969-07-16",
+        "event": "Apollo 11 launches from Kennedy Space Center."
+      },
+      {
+        "date": "1969-07-20",
+        "event": "Lunar Module lands on the Moon."
+      },
+      {
+        "date": "1969-07-24",
+        "event": "Apollo 11 returns to Earth."
+      }
+    ],
+    "sources": [
+      {
+        "title": "NASA Apollo 11 Mission Overview",
+        "url": "https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html"
+      }
+    ]
+  }
