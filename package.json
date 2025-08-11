@@ -4,9 +4,11 @@
     "description": "A virtual museum showcasing human discovery and thought.",
     "main": "index.js",
     "scripts": {
-      "start": "node index.js"
+        "start": "node index.js"
     },
-    "author": "Your Name",
+    "author": "Sajan Chamika",
     "license": "MIT",
-    "dependencies": {}
-  }
+    "dependencies": {
+        "express": "^5.1.0"
+    }
+}
